@@ -46,4 +46,4 @@
         console.log('and can be accessed via'+'%c var customersJSON_example','color:#345391;font-weight:bold;');
     }
 
-document.addEventListener("DOMContentLoaded", saySomething() });
+document.addEventListener("DOMContentLoaded", saySomething() );
