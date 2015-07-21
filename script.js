@@ -42,9 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     (function(){
         console.log('script.js has been fired');
-
         console.log('It contains example JSON containing a list of customers');
         console.log('and can be accessed via'+'%c var customersJSON_example','color:#345391;font-weight:bold;');
-
-    });
+    }());
 }
