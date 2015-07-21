@@ -6,6 +6,6 @@ body{
 blockquote{position: relative;}
 cite{
     position: absolute;
-    right: 20px;
+    right: 20%;
     bottom: -20px;
 }
