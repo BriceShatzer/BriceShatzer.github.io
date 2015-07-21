@@ -39,7 +39,6 @@ var customersJSON_example = [
         ]
     }    
 ];
-var 
 
 (function(){
     console.log('script.js has been fired');
