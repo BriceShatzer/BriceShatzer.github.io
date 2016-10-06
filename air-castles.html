@@ -1,69 +1,110 @@
 <!DOCTYPE html>
 <html>
 
-<head>    
+<head>
+    <title>...building castles in the air, from airs</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
     <script>        
-var customersJSON_example = [
-    {
-        "firstName": "John",
-        "lastName": "Smith",
-        "age": 25,
-        "address": {
-            "streetAddress": "21 2nd Street",
-            "city": "New York",
-            "state": "NY",
-            "postalCode": "10021"
-        },
-        "phoneNumber": [
+        var customersJSON_example = [
             {
-              "type": "home",
-              "number": "212 555-1234"
+                "firstName": "John",
+                "lastName": "Smith",
+                "age": 25,
+                "address": {
+                    "streetAddress": "21 2nd Street",
+                    "city": "New York",
+                    "state": "NY",
+                    "postalCode": "10021"
+                },
+                "phoneNumber": [
+                    {
+                      "type": "home",
+                      "number": "212 555-1234"
+                    },
+                    {
+                      "type": "fax",
+                      "number": "646 555-4567"
+                    }
+                ]
             },
             {
-              "type": "fax",
-              "number": "646 555-4567"
-            }
-        ]
-    },
-    {
-        "firstName": "Ben",
-        "lastName": "Jones",
-        "age": 34,
-        "address": {
-            "streetAddress": "432 Smith Street",
-            "city": "Chicago",
-            "state": "IL",
-            "postalCode": "60606"
-        },
-        "phoneNumber": [
-            {
-              "type": "home",
-              "number": "847 523-1034"
-            }
-        ]
-    }    
-];
+                "firstName": "Ben",
+                "lastName": "Jones",
+                "age": 34,
+                "address": {
+                    "streetAddress": "432 Smith Street",
+                    "city": "Chicago",
+                    "state": "IL",
+                    "postalCode": "60606"
+                },
+                "phoneNumber": [
+                    {
+                      "type": "home",
+                      "number": "847 523-1034"
+                    }
+                ]
+            }    
+        ];
 
-function saySomething(){
-    console.log('script.js has been fired');
-    console.log('It contains example JSON containing a list of customers');
-    console.log('and can be accessed via'+'%c var customersJSON_example','color:#345391;font-weight:bold;');
-}
+        function saySomething(){
+            console.log('The script tag in the <head> has been fired on ');
+            console.log('It contains example JSON containing a list of customers');
+            console.log('and can be accessed via'+'%c var customersJSON_example','color:#345391;font-weight:bold;');
+        }
 
-document.addEventListener("DOMContentLoaded", saySomething() );
+        document.addEventListener("DOMContentLoaded", saySomething() );
     </script>    
     <style>
-        body{
-            max-width: 1080px;
-            margin-left:auto;
-            margin-right:auto;
+        html {
+            min-height:100%;
+            position: relative;
         }
-        blockquote{position: relative;}
-        cite{
-            position: absolute;
-            right: 20%;
-            bottom: -20px;
-        }        
+        body {
+                margin: 0 auto;
+                padding-bottom: 5vh;
+                max-width: 1440px;
+                min-height: 95vh;
+                box-sizing: content-box;
+                display: flex;
+                align-items: center;
+
+                /* position: relative; */
+
+                font-family: 'Droid Sans', sans-serif;
+                font-size: 1.5em;
+                font-size: 2vw;
+                line-height: 1.5;
+        
+                background-color: #333;
+                color:  #F2F2F2;
+
+        }
+        cite {
+            display: block;
+            text-align: right;
+            padding: 1em 2em;
+        }
+        a {
+            position: absolute;            
+            bottom: 5vh;
+            left: 0;
+            width: 100vw;
+            text-align: center;
+            color: #2a2a2a;
+            font-weight: 700;
+            text-decoration: none;
+            -webkit-transition: color 200ms ease-out;
+            transition: color 200ms ease-out; 
+        }
+        a:hover,a:focus {
+            color: #101010;
+        }
+        
+
+        @media screen and (max-width: 768px){
+            body{ font-size: 16px; }
+        }
     </style>
 </head>
 
@@ -72,6 +113,8 @@ document.addEventListener("DOMContentLoaded", saySomething() );
     "The programmer, like the poet, works only slightly removed from pure thought-stuff. He builds his castles in the air, from air, creating by exertion of the imagination. Few media of creation are so flexible, so easy to polish and rework, so readily capable of realizing grand conceptual structures. Yet the program construct, unlike the poet's words, is real in the sense that it moves and works, producing visible outputs separate from the construct itself. It prints results, draws pictures, produces sounds, moves arms. The magic of myth and legend has come true in our time. One types the correct incantation on a keyboard, and a display screen comes to life, showing things that never were nor could be."
     <cite>~Frederick Brooks</cite>
     </blockquote>
+
+    <a href="http://www.BriceShatzer.com"> >> BriceShatzer.com</a>
 </body>
 
 </html>
