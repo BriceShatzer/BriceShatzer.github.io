@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>    
+    <script>        
+var customersJSON_example = [
+    {
+        "firstName": "John",
+        "lastName": "Smith",
+        "age": 25,
+        "address": {
+            "streetAddress": "21 2nd Street",
+            "city": "New York",
+            "state": "NY",
+            "postalCode": "10021"
+        },
+        "phoneNumber": [
+            {
+              "type": "home",
+              "number": "212 555-1234"
+            },
+            {
+              "type": "fax",
+              "number": "646 555-4567"
+            }
+        ]
+    },
+    {
+        "firstName": "Ben",
+        "lastName": "Jones",
+        "age": 34,
+        "address": {
+            "streetAddress": "432 Smith Street",
+            "city": "Chicago",
+            "state": "IL",
+            "postalCode": "60606"
+        },
+        "phoneNumber": [
+            {
+              "type": "home",
+              "number": "847 523-1034"
+            }
+        ]
+    }    
+];
+
+function saySomething(){
+    console.log('script.js has been fired');
+    console.log('It contains example JSON containing a list of customers');
+    console.log('and can be accessed via'+'%c var customersJSON_example','color:#345391;font-weight:bold;');
+}
+
+document.addEventListener("DOMContentLoaded", saySomething() );
+    </script>    
+    <style>
+        body{
+            max-width: 1080px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        blockquote{position: relative;}
+        cite{
+            position: absolute;
+            right: 20%;
+            bottom: -20px;
+        }        
+    </style>
+</head>
+
+<body>
+    <blockquote>
+    "The programmer, like the poet, works only slightly removed from pure thought-stuff. He builds his castles in the air, from air, creating by exertion of the imagination. Few media of creation are so flexible, so easy to polish and rework, so readily capable of realizing grand conceptual structures. Yet the program construct, unlike the poet's words, is real in the sense that it moves and works, producing visible outputs separate from the construct itself. It prints results, draws pictures, produces sounds, moves arms. The magic of myth and legend has come true in our time. One types the correct incantation on a keyboard, and a display screen comes to life, showing things that never were nor could be."
+    <cite>~Frederick Brooks</cite>
+    </blockquote>
+</body>
+
+</html>
