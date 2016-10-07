@@ -121,6 +121,11 @@ a.social:focus {
     justify-content: center;
     flex: 1;
 }
+.tip {
+    text-align: center;
+    letter-spacing: 1px;
+    font-style: italic;
+}
 .find-me {
     flex-wrap: wrap;
     width:50%;
