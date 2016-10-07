@@ -1,0 +1,191 @@
+html { background: #000000; }
+
+body {
+    font-family:"Droid Sans", "sans-serif";
+    line-height: 1.5;
+    color:  #F2F2F2;
+    background-color: #333333
+    
+}
+a,a:hover,a:focus,a:visited{color:#F2F2F2;}
+section {padding: 1rem;}
+section > div { 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.color-block{
+    width:100vw;
+    min-height: 2rem;
+    background-color: #69B5C3;
+
+}
+a.social {
+    font-size: 64px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+.contact a, 
+.social {
+    text-decoration: none;
+}
+.contact a:hover,
+.contact a:focus,
+a.social:hover,
+a.social:focus {
+    opacity: 0.6
+}
+.top {
+    padding: 0;
+    background-image: url('/images/code-background.jpg');
+    background-image: url('/images/kingb.jpg');
+    background-image: url('/images/terminal.png');
+    /*background-image: url('/images/terminal-gaussian.png');*/
+    background-size: cover;
+    text-align: center;
+    background-position: center 3%;
+    position: relative;
+    box-shadow:  0 -1px 10px rgba(0, 0, 0, .7);
+}
+.top img { 
+    margin: 0 auto;
+    max-width:25vw;
+    max-width: 20vw;
+    position: relative;
+    bottom: -13vw; 
+    bottom: -8vw;
+    -webkit-filter: drop-shadow(0 -1px 10px rgba(0, 0, 0, .7));
+    filter: drop-shadow(0 -1px 10px rgba(0, 0, 0, .7));
+    
+
+    /* -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+    filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')"; */
+}
+.introduction {
+    padding-top: 8vw;
+    color: #333;
+    background-color: #F2F2F2;
+}
+.introduction a {
+    color: #333;
+}
+.introduction>div {padding:2em 0;}
+.contact {
+    width: 100%;
+    text-align: center;
+
+}
+.contact i {
+    vertical-align: middle;
+}
+.contact > div {
+    display: inline-block;
+    padding: 1em;
+}
+
+.recent-highlights > div {
+    padding: 2em 0;
+}
+.recent-highlights > div:first-of-type {
+    justify-content: center;
+}
+.recent-highlights div {
+    display: flex;
+}
+.recent-highlights div h2 { 
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0;
+}
+.recent-highlights div p {} 
+.recent-highlights .visual {
+    padding-left: 0;
+    padding-right: 2.5em;
+}
+.recent-highlights .writeup + .visual  {
+    padding-left: 2.5em;
+    padding-right: 0;
+}
+.recent-highlights div img {
+    width: 100%;
+}
+.recent-highlights div>div {display:block;}
+.recent-highlights h3 { margin: 0; }
+.recent-highlights .writeup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+.find-me {
+    flex-wrap: wrap;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    max-width: 800px;
+}
+.find-me h2 {
+    margin: 0.5em 0;
+    font-size: 2em;
+}
+.fa-envelope {
+    font-size: 2.5em;
+    font-size: 2em;
+}
+.fa-mobile {
+    font-size: 3em;
+    font-size: 2.5em;
+    -webkit-transform: rotate(330deg);
+    -moz-transform: rotate(330deg);
+    -ms-transform: rotate(330deg);
+    -o-transform: rotate(330deg);
+    transform: rotate(330deg);
+}
+.find-me div{
+    width: 100%;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    section {
+        padding-left: 2em;
+        padding-right: 2em; 
+    }
+    .introduction > div {padding:0;}
+    .recent-highlights > div {
+        flex-wrap: wrap;
+    }
+    .recent-highlights .writeup,
+    .recent-highlights .visual {
+        width: 100%;
+    }
+    .recent-highlights .visual {
+        order: 1;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        text-align: center
+    }
+    .recent-highlights .visual img {
+        max-width: 360px;
+    }
+    .find-me {width: 75%;}
+}
+@media screen and (max-width: 480px) {
+    .find-me {width:100%;}
+}
+
+.silloutte{overflow: hidden;}
+.old {float:right;}
+.old img{
+    width: 30vw;
+    max-width: 250px;
+}
