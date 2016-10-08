@@ -14,7 +14,7 @@ section > div {
     margin: 0 auto;
 }
 .color-block{
-    width:100vw;
+    width:100%;
     min-height: 2rem;
     background-color: #69B5C3;
 
