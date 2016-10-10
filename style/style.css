@@ -38,11 +38,8 @@ a.social:focus {
     opacity: 0.6
 }
 .top {
-    padding: 0;
-    background-image: url('/images/code-background.jpg');
-    background-image: url('/images/kingb.jpg');
-    background-image: url('/images/terminal.png');
-    /*background-image: url('/images/terminal-gaussian.png');*/
+    padding: 0;    
+    background-image: url('/images/terminal.png');    
     background-size: cover;
     text-align: center;
     background-position: center 3%;
@@ -56,14 +53,8 @@ a.social:focus {
     position: relative;
     bottom: -13vw; 
     bottom: -8vw;
-    -webkit-filter: drop-shadow(0 -1px 10px rgba(0, 0, 0, .7));
-    filter: drop-shadow(0 -1px 10px rgba(0, 0, 0, .7));
-    
-
-    /* -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
-    filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
-    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
-    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')"; */
+    -webkit-filter: drop-shadow(0 -1px 4px rgba(0, 0, 0, .7));
+    filter: drop-shadow(0 -1px 4px rgba(0, 0, 0, .7));
 }
 .introduction {
     padding-top: 8vw;
