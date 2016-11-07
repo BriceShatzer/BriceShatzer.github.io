@@ -154,13 +154,14 @@ a.social:focus {
     width: 100%;
     text-align: center;
 }
-
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1440px) {
     section {
         padding-left: 2em;
         padding-right: 2em; 
     }
+}
+
+@media screen and (max-width: 768px) {
     .introduction > div {padding:0;}
     .recent-highlights > div {
         flex-wrap: wrap;
