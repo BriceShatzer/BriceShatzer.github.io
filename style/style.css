@@ -124,14 +124,15 @@ a.social:focus {
 }
 .find-me {
     flex-wrap: wrap;
-    width:50%;
+    /* width:50%; */
     margin-left: auto;
     margin-right: auto;
     position: relative;
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
-    max-width: 800px;
+    /* max-width: 800px; */
+    max-width: 640px;
 }
 .find-me h2 {
     margin: 0.5em 0;
@@ -179,11 +180,36 @@ a.social:focus {
     .recent-highlights .visual img {
         max-width: 360px;
     }
-    .find-me {width: 75%;}
+    .find-me {
+        /* width: 75%; */
+        width: 100%;
+        box-sizing: border-box;
+
+    }
 }
+
+
 @media screen and (max-width: 480px) {
-    .find-me {width:100%;}
+    .find-me {    
+        justify-content: center;
+        /* padding: 0; */
+    }
+    a.social {
+        width: 33%;
+        text-align: center;
+        font-size: 48px;
+    }
+
 }
+
+@media screen and (max-width: 300px) {
+    /* width:100%; */
+    a.social { width: 50%;}
+
+
+
+}
+
 
 .silloutte{overflow: hidden;}
 .old {float:right;}
