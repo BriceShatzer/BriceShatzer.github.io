@@ -22,9 +22,6 @@ section > div {
 a.social {
     font-size: 64px;
     -webkit-transition: all 200ms ease;
-    -moz-transition: all 200ms ease;
-    -ms-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
     transition: all 200ms ease;
 }
 .contact a, 
@@ -87,9 +84,13 @@ a.social:focus {
     padding: 2em 0;
 }
 .recent-highlights > div:first-of-type {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .recent-highlights div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .recent-highlights div h2 { 
@@ -112,10 +113,19 @@ a.social:focus {
 .recent-highlights div>div {display:block;}
 .recent-highlights h3 { margin: 0; }
 .recent-highlights .writeup {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
 }
 .tip {
     text-align: center;
@@ -123,12 +133,17 @@ a.social:focus {
     font-style: italic;
 }
 .find-me {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     /* width:50%; */
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
     justify-content: space-between;
     padding-bottom: 20px;
     /* max-width: 800px; */
@@ -146,9 +161,6 @@ a.social:focus {
     font-size: 3em;
     font-size: 2.5em;
     -webkit-transform: rotate(330deg);
-    -moz-transform: rotate(330deg);
-    -ms-transform: rotate(330deg);
-    -o-transform: rotate(330deg);
     transform: rotate(330deg);
 }
 .find-me div{
@@ -165,14 +177,17 @@ a.social:focus {
 @media screen and (max-width: 768px) {
     .introduction > div {padding:0;}
     .recent-highlights > div {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .recent-highlights .writeup,
     .recent-highlights .visual {
         width: 100%;
     }
     .recent-highlights .visual {
-        order: 1;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
         padding-left: 0 !important;
         padding-right: 0 !important;
         text-align: center
@@ -191,7 +206,9 @@ a.social:focus {
 
 @media screen and (max-width: 480px) {
     .find-me {    
-        justify-content: center;
+        -webkit-box-pack: center;    
+            -ms-flex-pack: center;    
+                justify-content: center;
         /* padding: 0; */
     }
     a.social {
