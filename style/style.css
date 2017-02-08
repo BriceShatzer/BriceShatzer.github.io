@@ -147,6 +147,7 @@ a.social:focus {
 }
 .recent-highlights div img {
     width: 100%;
+    max-width: 400px;
 }
 .recent-highlights div>div {display:block;}
 .recent-highlights h3 { margin: 0; }
