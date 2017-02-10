@@ -136,10 +136,10 @@ a.social:focus {
     text-align: center;
     margin: 0;
 }
-.recent-highlights div p {} 
 .recent-highlights .visual {
+    text-align: center;
     padding-left: 0;
-    padding-right: 2.5em;
+    padding-right: 2.5em;    
 }
 .recent-highlights .writeup + .visual  {
     padding-left: 2.5em;
@@ -151,6 +151,7 @@ a.social:focus {
 }
 .recent-highlights div>div {display:block;}
 .recent-highlights h3 { margin: 0; }
+.recent-highlights .visual,
 .recent-highlights .writeup {
     display: -webkit-box;
     display: -ms-flexbox;
