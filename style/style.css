@@ -168,6 +168,12 @@ a.social:focus {
         -ms-flex: 1;
             flex: 1;
 }
+
+.recent-highlights .writeup p+ul{
+    -webkit-margin-before: -1em;
+    /* -webkit-margin-after: -1em; */
+}
+
 .tip {
     text-align: center;
     letter-spacing: 1px;
