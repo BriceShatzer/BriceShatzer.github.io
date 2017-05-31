@@ -66,6 +66,9 @@ a.social:focus {
     color: #333;
 }
 .introduction>div {padding:2em 0;}
+.always-open-to-chatting {
+    text-align: center;
+}
 .contact {
     width: 100%;
     text-align: center;
