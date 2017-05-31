@@ -116,10 +116,11 @@ a.social:focus {
 .fa-file-pdf-o {
     font-size: 2.5em;
     font-size: 2em;
-
 }
 .recent-highlights > div {
     padding: 2em 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 .recent-highlights > div:first-of-type {
     -webkit-box-pack: center;
