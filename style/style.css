@@ -18,6 +18,10 @@ section > div {
     background-color: #69B5C3;
 
 }
+a.subtle {
+    color: unset;
+    text-decoration: none;
+}
 a.social {
     font-size: 64px;
     -webkit-transition: all 200ms ease;
