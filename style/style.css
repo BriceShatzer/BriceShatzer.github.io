@@ -25,20 +25,34 @@ a.subtle {
     text-decoration: none;
 }
 a.social {
-    font-size: 64px;
+    /* font-size: 64px; */
+    font-size: 48px;
     -webkit-transition: all 200ms ease;
     transition: all 200ms ease;
+    color: #333333;
 }
+/* a.social:hover,
+a.social:focus {
+    color: #F2F2F2 ;
+
+} */
 .contact a, 
 .social {
     text-decoration: none;
 }
+
 .contact a:hover,
 .contact a:focus,
 a.social:hover,
 a.social:focus {
     opacity: 0.6
 }
+/* .contact a:hover,
+.contact a:focus {
+    opacity: 0.6   
+}
+ */
+
 .top {
     padding: 0;    
     background-image: url('/images/terminal.png');    
@@ -125,6 +139,9 @@ a.social:focus {
     font-size: 2.5em;
     font-size: 2em;
 }
+.recent-hightlights {
+    padding-top: 2rem;
+}
 .recent-highlights > div {
     padding: 2em 0;
     -webkit-font-smoothing: antialiased;
@@ -189,6 +206,7 @@ a.social:focus {
     letter-spacing: 1px;
     font-style: italic;
 }
+.find-me-top > div,
 .find-me {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -202,19 +220,29 @@ a.social:focus {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
     justify-content: space-between;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     /* max-width: 800px; */
     max-width: 640px;
 }
+.find-me-top > div {
+
+}
+.find-me-top h2
 .find-me h2 {
     margin: 0.5em 0;
     font-size: 2em;
 }
 
+/* .find-me-top, */
 .find-me div{
     width: 100%;
     text-align: center;
 }
+.find-me-top {
+    background-color: #69B5C3;
+    color: #333333;
+}
+
 @media screen and (max-width: 1440px) {
     section {
         padding-left: 2em;
