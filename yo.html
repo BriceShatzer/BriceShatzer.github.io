@@ -1,12 +1,105 @@
 <html><head>
 <title>BriceShatzer.com</title>
+    <style>
+    .marquee--container {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.marquee--content {
+  display: flex;
+}
+
+.scroll {
+  animation: scroll 20s linear infinite;
+}
+
+.scroll.reverse {
+  animation-direction: reverse;
+}
+
+.marquee--content:hover {
+  animation-play-state: paused;
+}
+
+.marquee--item {
+  display: block;
+  margin: 0 .6rem;
+  transition: all 0.2s ease;
+}
+
+.marquee--item:hover {
+  background: rgba(255,255,255,0.5);
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.marquee--item img {
+  border-radius: 1rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+        }</style></head>
+    <body><section class="marquee--container">
+  <div class="marquee--content scroll">
+    <article class="marquee--item">
+       <img src="https://via.placeholder.com/600x300?text=01" alt="image">
+    </article>
+    <article class="marquee--item">
+       <img src="https://via.placeholder.com/600x300?text=02" alt="image">
+    </article>
+    <article class="marquee--item">
+       <img src="https://via.placeholder.com/600x300.jpg/f00/fff?text=03" alt="image">
+    </article>
+    <article class="marquee--item">
+       <img src="https://via.placeholder.com/600x300?text=04" alt="image">
+    </article>
+    <article class="marquee--item">
+       <img src="https://via.placeholder.com/600x300?text=05" alt="image">
+    </article>
+    <article class="marquee--item">
+       <img src="https://via.placeholder.com/600x300.jpg/1CACF4/fff?text=06" alt="image">
+    </article>
+    <article class="marquee--item">
+       <img src="https://via.placeholder.com/600x300?text=01" alt="image">
+    </article>
+    <article class="marquee--item">
+       <img src="https://via.placeholder.com/600x300?text=02" alt="image">
+    </article>
+    <article class="marquee--item">
+       <img src="https://via.placeholder.com/600x300.jpg/f00/fff?text=03" alt="image">
+    </article>
+    <article class="marquee--item">
+       <img src="https://via.placeholder.com/600x300?text=04" alt="image">
+    </article>
+    <article class="marquee--item">
+       <img src="https://via.placeholder.com/600x300?text=05" alt="image">
+    </article>
+    <article class="marquee--item">
+       <img src="https://via.placeholder.com/600x300.jpg/1CACF4/fff?text=06" alt="image">
+    </article>
+  </div>
+</section>
+    <!---
+
 <link href="http://fonts.googleapis.com/css?family=Droid+Sans|Lato:400,400italic,700italic" rel="stylesheet" type="text/css">
-<!--  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
+<!--  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> ---
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 <link rel="stylesheet" type="text/css" href="/style/normalize.css">
-<style>
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+    <style>
+
+    /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 
 
 
@@ -95,5 +188,5 @@ background: url(splash-page_cord.png) #000 repeat-x 535px top;
     </div>
 
 </div>
-
+----->
 </body></html>
