@@ -1,4 +1,4 @@
-html { 
+html {
     background: #69B5C3;
 }
 body {
@@ -6,11 +6,11 @@ body {
     line-height: 1.5;
     color:  #F2F2F2;
     background-color: #333333
-    
+
 }
 a,a:hover,a:focus,a:visited{color:#F2F2F2;}
 section {padding: 1rem;}
-section > div { 
+section > div {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -31,12 +31,21 @@ a.social {
     transition: all 200ms ease;
     color: #333333;
 }
-/* a.social:hover,
-a.social:focus {
-    color: #F2F2F2 ;
+a.ಠ_ಠ {
+    text-decoration: none;
+    position: relative;
+}
+a.ಠ_ಠ::after {
+       content: '';
+       width: 100%;
+       position: absolute;
+       left: 0;
+       bottom: -1px;
+       border-width: 0 0 1px;
+       border-style: solid;
+}
 
-} */
-.contact a, 
+.contact a,
 .social {
     text-decoration: none;
 }
@@ -49,25 +58,25 @@ a.social:focus {
 }
 /* .contact a:hover,
 .contact a:focus {
-    opacity: 0.6   
+    opacity: 0.6
 }
  */
 
 .top {
-    padding: 0;    
-    background-image: url('/images/terminal.png');    
+    padding: 0;
+    background-image: url('/images/terminal.png');
     background-size: cover;
     text-align: center;
     background-position: center 3%;
     position: relative;
     box-shadow:  0 -1px 10px rgba(0, 0, 0, .7);
 }
-.top img { 
+.top img {
     margin: 0 auto;
     max-width:25vw;
     max-width: 20vw;
     position: relative;
-    bottom: -13vw; 
+    bottom: -13vw;
     bottom: -8vw;
     -webkit-filter: drop-shadow(0 -1px 4px rgba(0, 0, 0, .7));
     filter: drop-shadow(0 -1px 4px rgba(0, 0, 0, .7));
@@ -157,7 +166,7 @@ a.social:focus {
     display: -ms-flexbox;
     display: flex;
 }
-.recent-highlights div h2 { 
+.recent-highlights div h2 {
     font-size: 2.5em;
     text-align: center;
     margin: 0;
@@ -165,7 +174,7 @@ a.social:focus {
 .recent-highlights .visual {
     text-align: center;
     padding-left: 0;
-    padding-right: 2.5em;    
+    padding-right: 2.5em;
 }
 .recent-highlights .writeup + .visual  {
     padding-left: 2.5em;
@@ -193,12 +202,11 @@ a.social:focus {
         -ms-flex: 1;
             flex: 1;
 }
-
+.recent-highlights .writeup p+p{
+    margin-top:  0.5em;
+}
 .recent-highlights .writeup p+ul{
     margin-top: -1em;
-    /* margin-bottom: 0; */
-    /* -webkit-margin-before: -1em; */
-    /* -webkit-margin-after: -1em; */
 }
 
 .tip {
@@ -209,8 +217,7 @@ a.social:focus {
 .find-me-top > div,
 .find-me {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    /* width:50%; */
+    flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -218,10 +225,8 @@ a.social:focus {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
-    /* padding-bottom: 20px; */
-    /* max-width: 800px; */
     max-width: 640px;
 }
 .find-me-top > div {
@@ -246,14 +251,14 @@ a.social:focus {
 @media screen and (max-width: 1440px) {
     section {
         padding-left: 2em;
-        padding-right: 2em; 
+        padding-right: 2em;
     }
 }
 
 @media screen and (max-width: 768px) {
     .contact { -ms-flex-wrap: wrap; flex-wrap: wrap; }
     .contact > div {
-        
+
     }
     .introduction > div {padding:0;}
     .recent-highlights > div {
@@ -287,9 +292,9 @@ a.social:focus {
 
 
 @media screen and (max-width: 480px) {
-    .find-me {    
-        -webkit-box-pack: center;    
-            -ms-flex-pack: center;    
+    .find-me {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
                 justify-content: center;
         /* padding: 0; */
     }
