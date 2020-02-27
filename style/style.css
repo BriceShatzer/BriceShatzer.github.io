@@ -166,26 +166,41 @@ a.social:focus {
     display: -ms-flexbox;
     display: flex;
 }
-.recent-highlights div h2 {
-    font-size: 2.5em;
+.recent-highlights h2 {
+    /* font-size: 2.5em; */
+    font-size: 2.25em;
     text-align: center;
     margin: 0;
 }
 .recent-highlights .visual {
     text-align: center;
-    padding-left: 0;
-    padding-right: 2.5em;
-}
-.recent-highlights .writeup + .visual  {
-    padding-left: 2.5em;
-    padding-right: 0;
+
 }
 .recent-highlights div img {
     width: 100%;
     max-width: 400px;
 }
 .recent-highlights div>div {display:block;}
-.recent-highlights h3 { margin: 0; }
+.recent-highlights h3 {margin: 0;}
+.recent-highlights .subsection {
+    display: block;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.recent-highlights .writeup {order: 2;}
+.recent-highlights .highlight:nth-of-type(odd) .visual {
+    -ms-flex-order: 1;
+    order: 1;
+    padding-left: 0;
+    padding-right: 2.5em;
+}
+.recent-highlights .highlight:nth-of-type(even) .visual {
+    -ms-flex-order: 3;
+    order: 3;
+    padding-left: 2.5em;
+    padding-right: 0;
+}
 .recent-highlights .visual,
 .recent-highlights .writeup {
     display: -webkit-box;
@@ -229,9 +244,6 @@ a.social:focus {
     justify-content: space-between;
     max-width: 640px;
 }
-.find-me-top > div {
-
-}
 .find-me-top h2
 .find-me h2 {
     margin: 0.5em 0;
@@ -271,10 +283,10 @@ a.social:focus {
 -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     }
-    .recent-highlights .visual {
+    .recent-highlights .highlight:nth-of-type(n) .visual {
         -webkit-box-ordinal-group: 2;
-            -ms-flex-order: 1;
-                order: 1;
+            -ms-flex-order: 3;
+                order: 3;
         padding-left: 0 !important;
         padding-right: 0 !important;
         text-align: center
@@ -294,8 +306,8 @@ a.social:focus {
 @media screen and (max-width: 480px) {
     .find-me {
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         /* padding: 0; */
     }
     a.social {
