@@ -177,8 +177,7 @@ a.social:focus {
 
 }
 .recent-highlights div img {
-    width: 100%;
-    max-width: 400px;
+    max-width: 480px;
 }
 .recent-highlights div>div {display:block;}
 .recent-highlights h3 {margin: 0;}
@@ -217,7 +216,8 @@ a.social:focus {
         -ms-flex: 1;
             flex: 1;
 }
-.recent-highlights .writeup p+p{
+.recent-highlights .writeup p+p,
+.recent-highlights .writeup ul+p{
     margin-top:  0.5em;
 }
 .recent-highlights .writeup p+ul{
@@ -265,6 +265,11 @@ a.social:focus {
         padding-left: 2em;
         padding-right: 2em;
     }
+}
+@media screen and (max-width: 1080px) {
+.recent-highlights div img {
+    width: 100%;
+    max-width: 400px;
 }
 
 @media screen and (max-width: 768px) {
