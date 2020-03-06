@@ -267,15 +267,14 @@ a.social:focus {
     max-width: 400px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 896px) {
     .contact { -ms-flex-wrap: wrap; flex-wrap: wrap; }
     .contact > div {
 
     }
     .introduction > div {padding:0;}
     .recent-highlights > div {
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+        flex-direction: column;
     }
     .recent-highlights .writeup,
     .recent-highlights .visual {
@@ -299,6 +298,44 @@ a.social:focus {
         width: 100%;
         box-sizing: border-box;
 
+    }
+    /* --- Recent Highlight collapse functionality --- */
+    .recent-highlights .writeup h3 {
+        cursor: pointer;
+        margin-bottom: 1rem;
+        text-indent: 2rem;
+    }
+    .recent-highlights .writeup h3+p {
+        margin-top: 0px;
+    }
+    .recent-highlights .writeup>*:not(h3){
+        overflow-y: hidden;
+        transition-property: max-height, margin;
+        transition-duration: 200ms, 350ms;
+    }
+    .recent-highlights .writeup:not(.expanded)>*:not(h3){
+        max-height: 0vh;
+        margin: 0px;
+
+    }
+    .recent-highlights .writeup h3::after{
+        content: ' ⨁';
+        padding-left: 0.5rem;
+    }
+    .recent-highlights .writeup.expanded h3::after{
+        content: ' ⌅';
+        position: relative;
+        top: 2px;
+    }
+    .recent-highlights .writeup.expanded>*:not(h3){
+        max-height: 100vh
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .recent-highlights .writeup h3 {
+        text-indent: unset;
     }
 }
 
