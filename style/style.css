@@ -218,7 +218,6 @@ a.social:focus {
 .recent-highlights .writeup p+ul{
     margin-top: -1em;
 }
-
 .tip {
     text-align: center;
     letter-spacing: 1px;
@@ -244,8 +243,6 @@ a.social:focus {
     margin: 0.5em 0;
     font-size: 2em;
 }
-
-/* .find-me-top, */
 .find-me div{
     width: 100%;
     text-align: center;
@@ -261,6 +258,7 @@ a.social:focus {
         padding-right: 2em;
     }
 }
+
 @media screen and (max-width: 1080px) {
 .recent-highlights div img {
     width: 100%;
@@ -269,9 +267,6 @@ a.social:focus {
 
 @media screen and (max-width: 896px) {
     .contact { -ms-flex-wrap: wrap; flex-wrap: wrap; }
-    .contact > div {
-
-    }
     .introduction > div {padding:0;}
     .recent-highlights > div {
         flex-direction: column;
@@ -294,7 +289,6 @@ a.social:focus {
         max-width: 360px;
     }
     .find-me {
-        /* width: 75%; */
         width: 100%;
         box-sizing: border-box;
 
