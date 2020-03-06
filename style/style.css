@@ -1,5 +1,6 @@
 html {
     background: #69B5C3;
+    padding-bottom: 2rem;
 }
 body {
     font-family:"Droid Sans", "sans-serif";
@@ -13,12 +14,6 @@ section {padding: 1rem;}
 section > div {
     max-width: 1200px;
     margin: 0 auto;
-}
-.color-block{
-    width:100%;
-    min-height: 2rem;
-    background-color: #69B5C3;
-
 }
 a.subtle {
     color: unset;
