@@ -89,6 +89,9 @@ a.social:focus {
 .introduction a {
     color: #333;
 }
+.introduction .group-text {
+    display: inline-block;
+}
 .introduction>div {padding:2em 0;}
 .always-open-to-chatting {
     text-align: center;
