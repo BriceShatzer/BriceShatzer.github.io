@@ -161,11 +161,6 @@ a.social:focus {
     display: -ms-flexbox;
     display: flex;
 }
-.recent-highlights h2 {
-    font-size: 2.25em;
-    text-align: center;
-    margin: 0;
-}
 .recent-highlights .visual {
     text-align: center;
 
@@ -175,11 +170,16 @@ a.social:focus {
 }
 .recent-highlights div>div {display:block;}
 .recent-highlights h3 {margin: 0;}
-.recent-highlights .subsection {
+.recent-highlights .subsection-header {
     display: block;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+}
+.recent-highlights .subsection-header h2 {
+    font-size: 2.25em; 
+    margin: 0;
 }
 .recent-highlights .writeup {order: 2;}
 .recent-highlights .highlight:nth-of-type(odd) .visual {
@@ -310,6 +310,9 @@ a.social:focus {
         max-height: 0vh;
         margin: 0px;
 
+    }
+    .recent-highlights .writeup h3::after{
+        font-weight: 500;
     }
     .recent-highlights .writeup h3::after{
         content: ' ⨁';
