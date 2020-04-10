@@ -315,16 +315,19 @@ a.social:focus {
 
     }
     .recent-highlights .writeup h3::after{
+        padding-left: 0.5rem;
         font-weight: 500;
+        font-family: "FontAwesome";
+        font-style:  normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
     }
     .recent-highlights .writeup h3::after{
-        content: ' ⨁';
-        padding-left: 0.5rem;
+        content: " \f196";
     }
     .recent-highlights .writeup.expanded h3::after{
-        content: ' ⌅';
-        position: relative;
-        top: 2px;
+        content: " \f147";  
     }
     .recent-highlights .writeup.expanded>*:not(h3){
         max-height: 100vh
