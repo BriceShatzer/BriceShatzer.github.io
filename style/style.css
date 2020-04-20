@@ -213,12 +213,18 @@ a.social:focus {
         -ms-flex: 1;
             flex: 1;
 }
+.recent-highlights .writeup ul {
+    margin-block-start:  0;
+}
 .recent-highlights .writeup p+p,
 .recent-highlights .writeup ul+p{
     margin-top:  0.5em;
 }
 .recent-highlights .writeup p+ul{
     margin-top: -1em;
+}
+.recent-highlights .writeup ul.important-points {
+    padding-inline-start: 30px;
 }
 .tip {
     text-align: center;
@@ -253,7 +259,10 @@ a.social:focus {
     background-color: #69B5C3;
     color: #333333;
 }
-
+/*--- */
+.hide {display:none !important;}
+.recent-highlights .writeup {position: relative}
+/* ---*/
 @media screen and (max-width: 1440px) {
     section {
         padding-left: 2em;
@@ -315,16 +324,19 @@ a.social:focus {
 
     }
     .recent-highlights .writeup h3::after{
+        padding-left: 0.5rem;
         font-weight: 500;
+        font-family: "FontAwesome";
+        font-style:  normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
     }
     .recent-highlights .writeup h3::after{
-        content: ' ⨁';
-        padding-left: 0.5rem;
+        content: " \f196";
     }
     .recent-highlights .writeup.expanded h3::after{
-        content: ' ⌅';
-        position: relative;
-        top: 2px;
+        content: " \f147";  
     }
     .recent-highlights .writeup.expanded>*:not(h3){
         max-height: 100vh

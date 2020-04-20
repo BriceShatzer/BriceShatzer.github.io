@@ -29,17 +29,8 @@
                 </p>
 
                 <p class="always-open-to-chatting">
-                    I'm currently looking for my next role, and always open to chatting with new and interesting people about what they're up to, so please don't hesitate to get in touch :)
+                    I'm currently looking for my next role, and always open to chatting with new and interesting people about what they're up to, so please don't hesitate to get in touch.
                 </p>
-
-<!-- previous blurb
-                </p>
-                    I've spent the past several years in the world of web development, working with clients of varying sizes on dozens of different platforms & technologies across the stack. I'm comfortable with pretty much anything written in code, but primarily specialize in crafting bespoke and intriguing client-facing interactions. Having been academically trained in graphic design and digital media production, I have the rare combination of being design-aware as well as understanding, in depth, how to implement design for the web in an architecturally sound manner.                   
-                </p>
-                <p class="always-open-to-chatting">
-                    Currently, I'm working on a bunch of <a href="https://g-omedia.com/" rel="noreferrer">websites you've probably heard of</a>, but I'm always open to chatting with new and interesting people about what they're up to, so please don't hesitate to get in touch :)
-                </p>
--->                
                 <div class="contact">
                     <div>
                         <a href="http://www.google.com/recaptcha/mailhide/d?k=01tH4BYp88ul18it4X3TRjqQ==&amp;c=vDH-TTviLPSOY7sec3O5XDImFTrU4qYNKttmFfYA1iA=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501tH4BYp88ul18it4X3TRjqQ\75\75\46c\75vDH-TTviLPSOY7sec3O5XDImFTrU4qYNKttmFfYA1iA\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">
@@ -99,8 +90,32 @@
                 </div>
                 <div class="writeup">
                     <h3>Customizable Headers Within Kinja</h3>
+<div class="prime">
+                    <ul class="important-points">
+                        <li><a href="https://briceshatzer.com/blog/2020-03-20-Kinja-Custom-Header-Case-Study" rel="noreferrer">Read the full case study</a></li>
+                        <li><a href="https://github.com/BriceShatzer/kinja-custom-header-files" rel="noreferrer">Explore the code</li>
+                        <li><a href="https://gawkermedia.github.io/kinja-components/?path=/story/4-components-custom-header--custom-header" rel="noreferrer">Play around with it in StoryBook</a></li>                        
+                    </ul>
                     <p>
-                        "All of the sites look the same", has been a consistent refrain that the product team has heard from both the editorial staff and readers throughout the life of Kinja, and only intensified when the brands of Onion, Inc. <a href="https://product.kinja.com/the-onion-is-now-publishing-on-kinja-1819619421" rel="noreferrer">migrated on to the platform</a>.
+                    Built a product feature that allowed the editors of various brands at G/O media to customize the headers of the various category/story type/vertical (sub-site) pages via <a href="https://changelog.kinja.com/added-ability-to-customize-curation-module-1840391541" rel="noreferrer">Kinja's internal management UI</a>. 
+                    </p>
+                    <p>
+                        I was singularly responsible for defining, overseeing, or implementing all aspects of the technical implementation of this product including:
+                    </p>
+                    <ul>
+                        <li>
+                            Designing an iterative and incremental <a href="https://gist.github.com/BriceShatzer/bdd91a7d423d23b0f349b33ac34f9184#file-custom-header-plan-md" rel="noreferrer">development plan</a> for the project
+                        </li>
+                        <li>Defining the API endpoint <a href="https://gist.github.com/BriceShatzer/bdd91a7d423d23b0f349b33ac34f9184#file-schema-json" rel="noreferrer">schema</a></li>
+                        <li>
+                            Creating <a href="https://docs.google.com/presentation/d/1Qt3uQsgsR0_9ZD0iyPL5mFcu_VGqp7AbJoq5b51x69k/edit?usp=sharing" rel="noreferrer">robust documentation</a> for use by staff across all parts of the business
+                        </li>
+                    </ul>
+</div>
+<span style="position: absolute; right:25px; top:0px; cursor:pointer;" id="wrenchToggle" class="hide">🔧</span>
+<div class="alt hide">
+                    <p>
+                        "All of the sites look the same", had been a consistent refrain that the product team has heard from both the editorial staff and readers throughout the life of Kinja, and only intensified when the brands of Onion, Inc. <a href="https://product.kinja.com/the-onion-is-now-publishing-on-kinja-1819619421" rel="noreferrer">migrated on to the platform</a>.
                     </p>
                     <p>With that in mind, we set about creating a new way for the different sites to be able to express their own unique and creative brand identities without having to rely on time from the product team. The ability to completely customize headers on any different category, story type, vertical (sub-site) page is available from within Kinja's internal management UI, <a href="https://changelog.kinja.com/added-ability-to-customize-curation-module-1840391541">which all site editors</a> have access to.
                     </p>
@@ -120,6 +135,8 @@
                     <p>
 
                         Some great examples of the editorial staff taking full advantage of the project can be found on the Gizmodo sub-sites like <a href="https://paleofuture.gizmodo.com/" rel="noreferrer">Paleofuture</a>, <a href="https://io9.gizmodo.com/" rel="noreferrer">io9</a>, & <a href="https://earther.gizmodo.com/" rel="noreferrer">Earther</a>; and the various sections of The A.V. Club:  <a href="https://film.avclub.com/" rel="noreferrer">Film</a>, <a href="https://tv.avclub.com/" rel="noreferrer">T.V.</a>, <a href="https://music.avclub.com/" rel="noreferrer">Music</a>, <a href="https://games.avclub.com/" rel="noreferrer">Games</a>, & <a href="https://aux.avclub.com/" rel="noreferrer">AUX</a>.
+                    </p>
+</div>
                 </div>
             </div>
              <div id="kinja-featured-post" class="highlight">
@@ -253,6 +270,18 @@ highlightExpanderControls.forEach(title=>{
         event.target.parentElement.classList.toggle('expanded');
     })
 })
+
+const wrenchToggle = document.getElementById('wrenchToggle');
+const urlParams = new URLSearchParams(window.location.search);
+if (urlParams.has('test')) {
+    wrenchToggle.classList.remove('hide');
+    wrenchToggle.addEventListener("click", (event)=>{
+        elements = []
+        elements.push(document.querySelector('.prime'));
+        elements.push(document.querySelector('.alt'));
+        elements.forEach(el=>el.classList.toggle('hide'));
+    });
+}
 
 console.log('%c look at you hacker... ', 'color:#20C20E;background:black;text-align:center;padding:20px;box-sizing:border-box');
 
