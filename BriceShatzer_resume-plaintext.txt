@@ -1,0 +1,54 @@
+Brice Shatzer
+1 W. Superior St. #203
+Chicago, IL 60654
+brice.shatzer@gmail.com
+319-239-2470
+
+Technologist with a decade of experience successfully building software for businesses of various sizes, utilizing dozens of different technologies across the stack. While I specialize in crafting novel user-facing interactions, I have a deep passion for the administrative and organizational processes around the craft of software development. 
+
+## Tools & Technologies ##
+React + Flow, Vue.js, Backbone.js + Marionette, AngularJS (1.x), Underscore.js/Lodash, jQuery, GSAP, SASS, LESS, Jest + Enzyme, Karma + Jasmine, styled-components, Grunt, Gulp, Babel, PostCSS, Node.js, Express.js, Git, HTML, CSS, Javascript, Ruby, PHP, WordPress, CraftCMS, Laravel, AWS Lambda, Mercurial, SVN, Apache, NGINX
+
+## Work Experience ##
+Onion, Inc. - Software Engineer
+Sep 2017 – Apr 2020
+- Was part of the team that worked on the software that powers some of the internet's favorite sites like Gizmodo, Lifehacker, Kotaku, Jalopnik, The Root, Jezebel, Deadspin, and The Onion; reaching 85-100 million active users a month.
+- Helped migrate and rewrite the core platform from a Scala w/ Closure templates back-end & Backbone + Marionette front-end to Isomorphic JavaScript (Express & React)
+- Designed, oversaw, and implemented all the technical aspects of various new product features
+
+Doejo - Software Engineer
+Feb 2016 – Apr 2017
+- Provided technical advisement to various stakeholders throughout the sales and development process
+- Served as a resource for junior developers through pair-programming and code reviews
+- Handled development of client projects and internal tools across the entire stack
+
+GoHealth - Web Developer II
+Sep 2015 – Feb 2016
+- Created and updated sites used in paid search, display advertising, and affiliate marketing efforts.
+- Coordinated with external clients to create branded gateways onto our platform
+- Generated technical documentation and recommendations for future improvements on multiple legacy code bases
+
+Packback - UI/Front-End Developer
+Nov 2014 – Sep 2015
+- Designed and implemented responsive views for projects built using AngularJS and Laravel
+- Built and maintained the Bower package used for styling across all company projects
+- Provided ad-hoc updates to Laravel API microservices
+- Created build processes in both Grunt and Gulp
+- Reviewed and provided guidance for teammates' code within my area of expertise
+
+Independent - Freelance Front-End Developer
+Aug 2014 - Jul 2015
+- Worked with clients to implement new site features and resolve existing client-side issues
+- Identify and fix cross-browser functionality problems
+- Troubleshoot front-end build process issues
+
+Links Technology Solutions - Web Developer/Designer 
+Apr 2012 - Jul 2014
+- Provided JavaScript development for various projects, which generally revolved around manipulating structured data to build page elements, adding UI interactivity, and handling asynchronous server interactions
+- Converted static visual design documents and wireframes to fully functional sites
+- Handled occasional graphic design work consisting primarily of asset manipulation/creation
+- Made content updates to existing sites on numerous different platforms and technologies
+
+## Education ##
+Carthage College - 2012
+Bachelor of Arts in Communication/Digital Media 
