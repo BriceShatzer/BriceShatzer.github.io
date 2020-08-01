@@ -6,8 +6,8 @@ body {
     font-family:"Droid Sans", "sans-serif";
     line-height: 1.5;
     color:  #F2F2F2;
-    background-color: #333333
-
+    background-color: #333333;
+    min-width: 240px;
 }
 a,a:hover,a:focus,a:visited{color:#F2F2F2;}
 section {padding: 1rem;}
@@ -150,7 +150,7 @@ a.social:focus {
     padding-top: 2rem;
 }
 .recent-highlights > div {
-    padding: 2em 0;
+    padding: 1em 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -173,6 +173,12 @@ a.social:focus {
 }
 .recent-highlights div>div {display:block;}
 .recent-highlights h3 {margin: 0;}
+.recent-highlights .section-title {padding:0;}
+.recent-highlights .section-title h2 {
+    font-size: 2.25em; 
+    margin: 0;
+    text-align: center;
+}
 .recent-highlights .subsection-header {
     display: block;
     max-width: 900px;
@@ -181,9 +187,10 @@ a.social:focus {
     text-align: center;
 }
 .recent-highlights .subsection-header h2 {
-    font-size: 2.25em; 
+    /* font-size: 2.25em;  */
     margin: 0;
 }
+.recent-highlights .subsection-header p {margin:0;}
 .recent-highlights .writeup {order: 2;}
 .recent-highlights .highlight:nth-of-type(odd) .visual {
     -ms-flex-order: 1;
