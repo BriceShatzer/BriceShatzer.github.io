@@ -108,6 +108,10 @@
             color: #101010;
         }
 
+        #iOS-testing {padding: 2rem;}
+        #iOS-testing > * {
+            margin: 2 rem;
+        }
 
         @media screen and (max-width: 768px){
             body{ font-size: 16px; }
@@ -149,9 +153,28 @@ navigatorKeys.forEach((item)=>{
     target.appendChild(el);
 });
 
+const setLocation = (url) => { window.location = url };
 
 
     </script>
+    <div id="iOS-testing">
+        <a href="https://itunes.apple.com/us/app/venmo/id351727428">
+            https:
+        </a>
+
+        <a href="itms-apps://itunes.apple.com/us/app/venmo/id351727428">
+            itms-apps
+        </a>
+
+        <button onclick="window.location = 'https://itunes.apple.com/us/app/venmo/id351727428'">
+            onClick to https
+        </button>
+
+        <button onclick="window.location = 'itms-apps://itunes.apple.com/us/app/venmo/id351727428'">
+            onClick to itms-app
+        </button>
+
+    </div>
 </body>
 
 </html>
