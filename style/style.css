@@ -168,7 +168,8 @@ a.social:focus {
     text-align: center;
 
 }
-.recent-highlights div img {
+.recent-highlights div img,
+.recent-highlights div video {
     max-width: 480px;
 }
 .recent-highlights div>div {display:block;}
