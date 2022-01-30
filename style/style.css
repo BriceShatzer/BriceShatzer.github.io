@@ -166,7 +166,9 @@ a.social:focus {
 }
 .recent-highlights .visual {
     text-align: center;
-
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;    
 }
 .recent-highlights div img,
 .recent-highlights div video {
@@ -234,6 +236,27 @@ a.social:focus {
 .recent-highlights .writeup ul.important-points {
     padding-inline-start: 30px;
 }
+/* #pay-with-venmo_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.8);
+    display: -webkit-box;
+    display: -ms-flexbox;    
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+#pay-with-venmo_overlay video {
+    max-width: unset;
+} */
 .tip {
     text-align: center;
     letter-spacing: 1px;
@@ -304,7 +327,8 @@ a.social:focus {
         padding-right: 0 !important;
         text-align: center
     }
-    .recent-highlights .visual img {
+    .recent-highlights .visual img,
+    .recent-highlights .visual video {
         max-width: 360px;
     }
     .find-me {

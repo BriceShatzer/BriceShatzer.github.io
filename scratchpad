@@ -1,3 +1,146 @@
+
+
+
+As the parent company of Venmo, PayPal wanted the ability for Venmo users to complete checkout transactions using their Venmo account as a funding source. 
+
+For this to occur, the user must be able to authorize the transaction in their Venmo app. We do this by generating an app-specific url which will launch the Venmo app on the user's device in a way that allows it to interact with a Firebase backend which manages the state & relationship between the particular PayPal Checkout SDK being used and the app, regarding the transaction that is currently in the process of being authorized. 
+
+In the event that the checkout process is occurring in an environment where the Venmo app isn't available (such as on desktop), we generate a QR Code which is readable by the Venmo app and launches the authorization flow for that transaction. 
+
+
+Finally, all of this built out functionality needed to be <a href="https://github.com/paypal/paypal-checkout-components/pull/1632">integrated</a> into the broader <a href="https://github.com/paypal/paypal-checkout-components">PayPal Checkout Web SDK</a>, enabling it to be run in a cross-domain manner. 
+
+
+
+I served as the primary developer and point of contact for the Checkout Integrations team, building out the web implementation portions of the solution.
+
+
+
+
+Checkout Integrations 
+
+ enabling users to generate a QR Code that allows them to complete the checkout process via their mobile device
+ our "Pay w/ Venmo"
+
+---
+
+
+
+
+When the checkout process is occurring on a device that has the Venmo app installed, this process of launching & completing the authorization flow is relatively straightforward, but when the checkout process is taking place on in an environment where this 
+
+
+
+
+
+In the event that the checkout process is occurring in an environment where the Venmo app isn't present, 
+
+ on a device that doesn't have
+
+
+
+When 
+When the 
+
+
+ is relative straightforward
+
+This is relatively straightforward if the checkout process is occurring a mobile device, 
+
+
+
+
+creates a 
+ built using Firebase infrastructure to manage the state between the Web SDK and the Venmo mobile app.
+- 
+
+firebase
+
+
+
+If the checkout is occurring on a mobile device
+ occurring a mobile device, as we just launch the user's Venmo app using an <a href="https://css-tricks.com/create-url-scheme/" rel="noreferrer">app-specific url</a>
+
+This is relatively straightforward if the checkout process is occurring a mobile device, as we just launch the user's Venmo app using an <a href="https://css-tricks.com/create-url-scheme/" rel="noreferrer">app-specific url</a>
+
+On mobile devices, this is accomplished by launching the Venmo app and prompting the user confirm the transaction details. 
+
+
+
+Venmo doesn't have the infrastructure to allow users to log into their account via web a web login, that would allow them to authorize their 
+
+
+On mobile devices, this is accomplished by launching the Venmo app and prompting the user confirm the transaction details. 
+
+When this 
+
+We needed a way to allow the Venmo app to be looped into the transaction flow, 
+
+the Venmo app still needed to be 
+
+
+For non-mobile environments, we needed to create a solution t
+
+
+
+
+ wanted to create a way  
+
+With
+
+Allow Venmo users to use their authorize and complete PayPal transactions 
+Allow users to complete PayPal transactions using their Venmo account. 
+Allow Venmo users to complete PayPal transactions on the web using their Venmo account on the mobile app  
+
+
+
+
+- Primary point of contact on the web checkout team
+- built using Firebase infrastructure to manage the state between the Web SDK and the Venmo mobile app.
+- 
+
+integrated 
+
+
+
+- generate QR Code 
+
+
+
+
+Finally, all of this built out functionality needed to be <a href="https://github.com/paypal/paypal-checkout-components/pull/1632">integrated</a> into the broader <a href="https://github.com/paypal/paypal-checkout-components">PayPal Checkout Web SDK</a>, enabling it to be run in a cross-domain manner. 
+
+
+
+
+
+
+zoid
+that was built out into the , enabled it be run in a cross-domain manner. 
+
+
+
+- Primary developer and point of contact for our "Pay w/ Venmo" desktop solution, enabling users to generate a QR Code that allows them to complete the checkout process via their mobile device
+
+
+Primary point of contact on the web checkout team
+
+
+-----
+
+PayPal Open Source 
+
+Updated and maintained the <a href="http://paypal.github.io/">landing page/project catalog</a> for the various open source projects found within PayPal's public GitHub organization. Most notably, I built and curated a <a href="https://paypal.github.io/sdk">section</a> dedicated to the various SDKs that PayPal makes publicly available for merchants and other external organizations to integrate within their projects. 
+
+
+
+
+organized 
+
+-------
+=====
+-------
+
 spreadsheets, documentation platforms, workflow,
 clipboard managers, Workflowy, Google Sheets, Wunderlist☹️
 
