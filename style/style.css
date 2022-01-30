@@ -149,7 +149,8 @@ a.social:focus {
 .recent-highlights {
     padding-top: 2rem;
 }
-.recent-highlights > div {
+.recent-highlights > div,
+.recent-highlights > span {
     padding: 1em 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
