@@ -49,6 +49,7 @@
                     </div>
                 </div>
             </div>
+            
         </section>
         <section class="find-me-top">
             <div>
@@ -73,9 +74,13 @@
             </a>
             </div>
         </section>
+        <section class="blog">
+            <div class="section-title"><h2><a href="/blog">Some Recent Blogs Posts...</a></h2></div>
+            <div id="recentBlogPosts" class="posts"></div>
+        </section>
 
         <section class="recent-highlights" id="work">
-            <div class="section-title"><h2>Some Recent Highlights...</h2></div>
+            <div class="section-title"><h2>Neat Things I've Worked On...</h2></div>
             <div class="subsection-header">
                 <p>
                     While at PayPal, I was part of the Checkout Integrations team that worked on the company's flagship <a href="https://developer.paypal.com/docs/checkout/" rel="noreferrer">Checkout product</a> which handles $100+B in payment volumes across 200+ countries for millions of active users a month.
@@ -376,6 +381,28 @@ if (urlParams.has('test')) {
         elements.forEach(el=>el.classList.toggle('hide'));
     });
 }
+
+fetch('https://briceshatzer.com/blog/posts')
+    .then(function (response) {	return response.text() }) 
+    .then(function (text) {	
+        let posts = JSON.parse(text);
+        if (posts && posts.length){
+            let markup = ['<ul>'];
+            posts.slice(0,4).forEach((obj)=>{
+                markup.push(`<li> <div>
+                    <span>${obj.date}</span>
+                    <h3> <a href="${obj.url}">${obj.title}</a> </h3>
+                    <p>${obj.description}</p>
+                </div></li>`)});
+            markup.push('</ul>');
+            document.getElementById('recentBlogPosts').innerHTML = markup.join('');
+            document.querySelector('section.blog').classList.add('has-posts');
+
+            
+        }
+
+    }) 
+    .catch(function (err) {	console.warn('Something went wrong.', err) })
 
 console.log('%c look at you hacker... ', 'color:#20C20E;background:black;text-align:center;padding:20px;box-sizing:border-box');
 

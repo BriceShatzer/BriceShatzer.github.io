@@ -76,23 +76,29 @@ a.social:focus {
     -webkit-filter: drop-shadow(0 -1px 4px rgba(0, 0, 0, .7));
     filter: drop-shadow(0 -1px 4px rgba(0, 0, 0, .7));
 }
+.introduction {padding-top: 8vw;}
+.blog,
 .introduction {
-    padding-top: 8vw;
     color: #333;
     background-color: #F2F2F2;
 }
+.blog h2,
 .introduction h2 {
     text-align: center;
     font-size: 2em;
     margin: 0;
 }
+.blog a,
 .introduction a {
     color: #333;
 }
+.blog .group-text,
 .introduction .group-text {
     display: inline-block;
 }
-.introduction>div {padding:2em 0;}
+.introduction>div {
+    padding:2em 0;
+}
 .always-open-to-chatting {
     text-align: center;
 }
@@ -146,6 +152,50 @@ a.social:focus {
     font-size: 2.5em;
     font-size: 2em;
 }
+
+.blog{
+    box-sizing: content-box;
+    border-bottom: solid 1rem #69B5C3;
+    max-height: 0;
+    padding: 0px;
+    overflow: hidden ;
+    transition: all 750ms ease;
+}
+.blog.has-posts{
+    max-height: 400vh;
+    padding: 1rem;
+}
+.blog a {
+    text-decoration: none;
+    transition: color 150ms ease;
+}
+.blog a:hover { color:#69B5C3;}
+.blog h2,
+.blog h3 {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.blog .posts{
+    padding: 0;
+    max-width: 800px;
+}
+
+.blog .posts ul {list-style: none;}
+.blog .posts li {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+}
+.blog .posts span {font-size: 80%}
+.blog .posts h3 {
+    font-size:1.4rem;
+    font-weight: 700;
+    margin: 0;
+}
+.blog .posts p {margin-top: 0.5rem;}
+
+
 .recent-highlights {
     padding-top: 2rem;
 }
