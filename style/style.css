@@ -195,7 +195,7 @@ a.social:focus {
 }
 .blog .posts p {margin-top: 0.5rem;}
 
-
+.blog.has-posts,
 .recent-highlights {
     padding-top: 2rem;
 }
