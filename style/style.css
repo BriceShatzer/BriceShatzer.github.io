@@ -224,6 +224,7 @@ a.social:focus {
 .recent-highlights div img,
 .recent-highlights div video {
     max-width: 480px;
+    width: 100%;
 }
 .recent-highlights div>div {display:block;}
 .recent-highlights h3 {margin: 0;}
@@ -287,7 +288,7 @@ a.social:focus {
 .recent-highlights .writeup ul.important-points {
     padding-inline-start: 30px;
 }
-/* #pay-with-venmo_overlay {
+#pay-with-venmo_overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -295,6 +296,15 @@ a.social:focus {
     height: 100vh;
     z-index: 1;
     background: rgba(0, 0, 0, 0.8);
+}
+#pay-with-venmo_overlay > div {
+    position: relative;
+}
+#pay-with-venmo_overlay video {
+    max-width: calc(75vw - 2rem);
+}
+#pay-with-venmo_overlay,
+#pay-with-venmo_overlay button{
     display: -webkit-box;
     display: -ms-flexbox;    
     display: flex;
@@ -305,9 +315,23 @@ a.social:focus {
     -ms-flex-align: center;
     align-items: center;
 }
-#pay-with-venmo_overlay video {
-    max-width: unset;
-} */
+
+#pay-with-venmo_overlay button {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    border: 3px solid #69B5C3;
+    background-color: #f2f2f2;
+    color: #777;
+    font: 16px/100% arial, sans-serif;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #fff;
+}
 .tip {
     text-align: center;
     letter-spacing: 1px;
@@ -357,7 +381,7 @@ a.social:focus {
     width: 100%;
     max-width: 400px;
 }
-
+}
 @media screen and (max-width: 896px) {
     .contact { -ms-flex-wrap: wrap; flex-wrap: wrap; }
     .introduction > div {padding:0;}
