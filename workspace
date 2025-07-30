@@ -1,0 +1,15 @@
+// this is just a collection of old code or content that I've pulled out of the main site 
+
+<div id="blog-post" class="highlight">
+    <div class="visual">
+        <a href="https://web.archive.org/web/20170628180906/http://doejo.com/blog/sniff-out-code-smells-using-media-queries/" rel="noreferrer">
+            <img src="/images/doejo-blog.png" alt="screenshot of a blog post"/>
+        </a>
+    </div>
+    <div class="writeup">
+        <h3>Front-End Refactoring: Sniff Out Code Smells Using Media Queries</h3>
+        <p>
+            An article written for the <a href="https://web.archive.org/web/20170628180906/http://doejo.com/blog/sniff-out-code-smells-using-media-queries/" rel="noreferrer">Doejo blog</a> that discusses some strategies around using JavaScript to painlessly audit an unfamiliar front-end code base, with the goal of uncovering idiosyncrasies and flaws that could potentially cause issues maintaining or enhancing the project going forward.
+        </p>
+    </div>
+</div>
