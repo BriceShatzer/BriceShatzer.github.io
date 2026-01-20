@@ -296,6 +296,7 @@ a.social:focus {
 .recent-highlights .writeup ul.important-points {
     padding-inline-start: 30px;
 }
+#pay-with-venmo video {cursor: pointer;}
 #pay-with-venmo_overlay {
     position: fixed;
     top: 0;
