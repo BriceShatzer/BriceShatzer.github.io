@@ -378,16 +378,19 @@ fetch('https://briceshatzer.com/blog/posts')
         if (posts && posts.length){
             let markup = ['<ul>'];
             posts.slice(0,4).forEach((obj)=>{
-                markup.push(`<li> <div>
-                    <span>${obj.date}</span>
-                    <h3> <a href="${obj.url}">${obj.title}</a> </h3>
-                    <p>${obj.description}</p>
-                </div></li>`)});
+                markup.push(
+                    `<li>
+                        <div>
+                            <span>${obj.updated ? obj.updated : obj.date}</span>
+                            <h3> <a href="${obj.url}">${obj.title}</a> </h3>
+                            <p>${obj.description}</p>
+                        </div>
+                    </li>`
+                );
+            });
             markup.push('</ul>');
             document.getElementById('recentBlogPosts').innerHTML = markup.join('');
             document.querySelector('section.blog').classList.add('has-posts');
-
-            
         }
 
     }) 
